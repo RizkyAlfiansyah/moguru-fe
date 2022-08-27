@@ -1,7 +1,12 @@
-import Head from "next/head";
-import Image from "next/image";
-import { About, Header, Hero, MainHeader } from "../layout";
-import styles from "../styles/Home.module.css";
+import {
+  About,
+  Contacts,
+  Feature,
+  Header,
+  Hero,
+  MainHeader,
+  Statistic,
+} from "../layout";
 
 export default function Home() {
   return (
@@ -12,9 +17,18 @@ export default function Home() {
         <div className="w-full flex justify-center h-80 m-auto bg-hero-bg">
           <Hero />
         </div>
-        <div className="w-full bg-white flex justify-center h-80 m-auto px-36 border-b-slate-900">
+        <div className="w-full bg-white flex justify-center h-screen m-auto px-14">
           <About />
         </div>
+        <div className="w-full bg-white flex justify-center h-screen m-auto px-14">
+          <Feature />
+        </div>
+        <div className="w-full bg-white flex justify-center h-screen m-auto px-14">
+          <Statistic />
+        </div>
+        <footer className="w-full bg-white flex justify-center m-auto px-14">
+          <Contacts />
+        </footer>
       </div>
     </>
   );

@@ -11,6 +11,7 @@ module.exports = {
         primary: {
           100: "#f1f1f1",
           200: "#40B598",
+          300: "#F3F3FF",
         },
       },
       fontSize: {
