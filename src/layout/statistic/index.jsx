@@ -38,7 +38,7 @@ const Statistic = () => {
                         />
                     </div>
                     <p className='text-3xl font-extrabold'>
-                        Mata Telajaran
+                        Mata Pelajaran
                     </p>
                 </div>
                 <div className='w-3/12 flex flex-col p-4 gap-5 justify-start items-center '>
