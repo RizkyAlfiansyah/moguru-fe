@@ -8,7 +8,7 @@ const Hero = () => {
     const [select, setSelect] = useState(false)
 
     const data = [
-        'Tolotoli',
+        'Tolitoli',
         'Makassar',
         'Bone',
         'Gowa',
