@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import HeroIllustration from 'assets/img/landing-page/hero-section.png'
 import Image from 'next/image'
 import ArrowDownSVG from 'assets/icons/arrow-down.svg'
+import { Button } from 'components'
 
 const Hero = () => {
 
@@ -17,9 +18,9 @@ const Hero = () => {
     ]
 
     return (
-        <div className='w-full h-auto px-36 flex gap-10 justify-between items-center relative bg-black bg-opacity-50 backdrop-blur-sm'>
-            <div className='w-5/12 flex flex-col gap-7 justify-start items-start'>
-                <p className='text-5xl font-extrabold leading-20 tracking-tight text text-primary-200 drop-shadow-xl'>
+        <div className='w-full h-auto lg:px-36 md:px-10 p-2 py-10 flex flex-wrap justify-between lg:items-center relative bg-black bg-opacity-50 backdrop-blur-sm'>
+            <div className='md:w-5/12 w-full flex flex-col gap-2 md:gap-7 justify-start items-start m-auto'>
+                <p className='text-3xl lg:text-5xl font-extrabold lg:leading-20 tracking-tight text text-primary-200 drop-shadow-xl'>
                     Selamat Datang Di Moguru
                 </p>
                 <p className='text-xl text-white font-thin leading-7 tracking-wide drop-shadow-2xl'>
@@ -31,7 +32,7 @@ const Hero = () => {
                     </p>
                 </div>
                 <div className='w-full flex justify-between gap-2 relative'>
-                    <div className='w-8/12 py-3 px-4 bg-white shadow-md rounded-lg relative flex justify-between items-center cursor-pointer ' onClick={() => setSelect((prev) => !prev)} >
+                    <div className='w-8/12 py-3 px-4 bg-white shadow-xl rounded-lg relative flex justify-between items-center cursor-pointer ' onClick={() => setSelect((prev) => !prev)} >
                         <p className='text-xl font-thin leading-7 tracking-wide'>
                             {data[0]}
                         </p>
@@ -42,11 +43,9 @@ const Hero = () => {
                             />
                         </div>
                     </div>
-                    <button className='w-4/12 py-3 px-4 bg-primary-200 shadow-md rounded-lg relative flex justify-center items-center cursor-pointer hover:bg-opacity-90' >
-                        <p className='text-center text-white text-xl font-thin'>
-                            Cari
-                        </p>
-                    </button>
+                    <Button
+                        title='Cari'
+                    />
                     {
                         select && (
                             <div className='w-8/12 absolute top-16 rounded-lg shadow-md bg-white pt-5 px-2'>
@@ -62,7 +61,7 @@ const Hero = () => {
                     }
                 </div>
             </div>
-            <div className='w-5/12 flex flex-col gap-7 justify-start items-center'>
+            <div className='hidden w-5/12 md:flex flex-col gap-7 justify-start items-center m-auto'>
                 <Image
                     src={HeroIllustration}
                     alt='hero-illustration'

@@ -16,10 +16,10 @@ const Feature = () => {
     ]
 
     return (
-        <div className='w-full p-2 flex flex-col gap-2 py-24 border-b-2'>
+        <div className='w-full p-2 flex flex-col gap-2 lg:py-0 py-4 lg:px-14 m-auto'>
             <p className='w-full text-start font-bold text-4xl'>Feature</p>
-            <div className='w-full flex flex-wrap justify-between items-center gap-2'>
-                <div className='w-3/12 flex flex-col p-4 gap-5 justify-start items-center '>
+            <div className='w-full flex flex-col lg:flex-row justify-between items-center gap-2'>
+                <div className='w-full lg:w-3/12 flex flex-col p-4 gap-5 justify-start items-start'>
                     <div className='bg-primary-300 shadow-xl rounded-xl'>
                         <Image
                             src={AboutUsIllustration}
@@ -30,7 +30,7 @@ const Feature = () => {
                         Feature A
                     </p>
                 </div>
-                <div className='w-3/12 flex flex-col p-4 gap-5 justify-start items-center '>
+                <div className='w-full lg:w-3/12 flex flex-col p-4 gap-5 justify-start items-start'>
                     <div className='bg-primary-300 shadow-xl rounded-xl'>
                         <Image
                             src={AboutUsIllustration}
@@ -41,7 +41,7 @@ const Feature = () => {
                         Feature B
                     </p>
                 </div>
-                <div className='w-3/12 flex flex-col p-4 gap-5 justify-start items-center '>
+                <div className='w-full lg:w-3/12 flex flex-col p-4 gap-5 justify-start items-center '>
                     <div className='bg-primary-300 shadow-xl rounded-xl'>
                         <Image
                             src={AboutUsIllustration}
