@@ -26,7 +26,7 @@ const MainHeader = () => {
                     </div>
                 )
             }
-            <div className='hidden lg:flex justify-center items-center gap-7 mx-32'>
+            <div className='hidden lg:flex justify-center items-center gap-7'>
                 <div className='w-28 p-2 bg-primary-200 rounded-2xl cursor-pointer hover:bg-opacity-80'>
                     <p className='text-center text-white text-sm font-semibold'>
                         Tutor Kami
