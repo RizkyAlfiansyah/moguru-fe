@@ -10,7 +10,7 @@ const MainHeader = ({ search }) => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className='w-full flex justify-between items-center'>
+        <div className='w-full flex lg:gap-2 justify-between items-center'>
             <div className='flex justify-center items-center'>
                 <Image src={LogoPNG} alt='logo' width={177} height={55} />
             </div>
@@ -32,17 +32,17 @@ const MainHeader = ({ search }) => {
             {
                 search && (
                     <div className='hidden lg:flex gap-4'>
-                        <div className='w-64'>
+                        <div className='w-6/12'>
                             <Search
                                 placeholder='Cari Lokasi...'
                             />
                         </div>
-                        <div className='w-44'>
+                        <div className='w-4/12'>
                             <Search
                                 placeholder='Cari Mata Pelajaran...'
                             />
                         </div>
-                        <div className='w-28 flex items-center'>
+                        <div className='flex items-center'>
                             <button
                                 className='bg-primary-200 text-white rounded-md px-2 py-1 hover:opacity-70'
                             >
