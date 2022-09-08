@@ -13,7 +13,7 @@ const Pagination = () => {
                 />
             </div>
             <div className='bg-slate-300 rounded-full flex items-center justify-center gap-2 text-center'>
-                <p className='w-7 h-7 hover:bg-primary-200 hover:rounded-md hover:rounded-l-full hover:shadow-2xl cursor-pointer hover:text-white'>1</p>
+                <p className='w-7 h-7 text-primary-200 hover:bg-primary-200 hover:rounded-md hover:rounded-l-full hover:shadow-2xl cursor-pointer hover:text-white'>1</p>
                 <p className='w-7 h-7 hover:bg-primary-200 hover:rounded-md hover:shadow-2xl cursor-pointer hover:text-white'>2</p>
                 <p className='w-7 h-7 hover:bg-primary-200 hover:rounded-md hover:shadow-2xl cursor-pointer hover:text-white'>3</p>
                 <p className='w-7 h-7 hover:bg-primary-200 hover:rounded-md hover:shadow-2xl cursor-pointer hover:text-white'>...</p>
