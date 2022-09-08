@@ -9,7 +9,7 @@ const Tutors = () => {
             <div className='w-full flex flex-col lg:flex-row justify-between gap-4 items-center'>
                 {
                     Array(3).fill().map((_, index) => (
-                        <div className='w-72 rounded-lg shadow-xl flex flex-col'>
+                        <div className='w-72 rounded-lg shadow-xl flex flex-col' key={index}>
                             <Image
                                 src={Profile}
                                 alt='profile'
