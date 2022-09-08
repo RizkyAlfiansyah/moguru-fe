@@ -31,7 +31,7 @@ const MainHeader = ({ search }) => {
             }
             {
                 search && (
-                    <div className='flex gap-4'>
+                    <div className='hidden lg:flex gap-4'>
                         <div className='w-64'>
                             <Search
                                 placeholder='Cari Lokasi...'

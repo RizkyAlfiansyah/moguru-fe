@@ -5,7 +5,7 @@ import { Pagination } from 'components'
 
 const Tutors = () => {
     return (
-        <div className='w-full flex flex-col justify-start gap-8'>
+        <div className='w-full flex flex-col justify-start gap-4'>
             <div className='w-full flex flex-col lg:flex-row justify-between gap-4 items-center'>
                 {
                     Array(3).fill().map((_, index) => (
