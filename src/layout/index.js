@@ -5,3 +5,4 @@ export { default as About } from "./about-us";
 export { default as Feature } from "./feature";
 export { default as Statistic } from "./statistic";
 export { default as Contacts } from "./contact-us";
+export { default as Tutors } from "./tutors";

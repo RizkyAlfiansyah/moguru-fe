@@ -32,7 +32,7 @@ const Hero = () => {
                     </p>
                 </div>
                 <div className='w-full flex justify-between gap-2 relative'>
-                    <div className='w-8/12 py-3 px-4 bg-white shadow-xl rounded-lg relative flex justify-between items-center cursor-pointer ' onClick={() => setSelect((prev) => !prev)} >
+                    <div className='w-10/12 py-3 px-4 bg-white shadow-xl rounded-lg relative flex justify-between items-center cursor-pointer ' onClick={() => setSelect((prev) => !prev)} >
                         <p className='text-xl font-thin leading-7 tracking-wide'>
                             {data[0]}
                         </p>

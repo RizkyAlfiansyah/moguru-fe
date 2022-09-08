@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import { useRouter } from 'next/router'
 import LogoPNG from 'assets/img/brand/brand-logo.png'
 import Image from 'next/image'
+import { Button, Search } from 'components'
 
-const MainHeader = () => {
+const MainHeader = ({ search }) => {
+    const router = useRouter()
 
     const [open, setOpen] = useState(false)
 
@@ -26,9 +29,32 @@ const MainHeader = () => {
                     </div>
                 )
             }
+            {
+                search && (
+                    <div className='flex gap-4'>
+                        <div className='w-64'>
+                            <Search
+                                placeholder='Cari Lokasi...'
+                            />
+                        </div>
+                        <div className='w-44'>
+                            <Search
+                                placeholder='Cari Mata Pelajaran...'
+                            />
+                        </div>
+                        <div className='w-28 flex items-center'>
+                            <button
+                                className='bg-primary-200 text-white rounded-md px-2 py-1 hover:opacity-70'
+                            >
+                                Cari
+                            </button>
+                        </div>
+                    </div>
+                )
+            }
             <div className='hidden lg:flex justify-center items-center gap-7'>
                 <div className='w-28 p-2 bg-primary-200 rounded-2xl cursor-pointer hover:bg-opacity-80'>
-                    <p className='text-center text-white text-sm font-semibold'>
+                    <p className='text-center text-white text-sm font-semibold' onClick={() => router.push('/list-tutor')}>
                         Tutor Kami
                     </p>
                 </div>
