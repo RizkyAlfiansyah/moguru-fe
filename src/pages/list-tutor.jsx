@@ -11,7 +11,7 @@ const Home = () => {
                         search={true}
                     />
                 </div>
-                <div className='w-full h-80 justify-center items-center flex p-2 lg:px-24'>
+                <div className='w-full md:h-80 justify-center items-center flex p-2 lg:px-24'>
                     <Tutors />
                 </div>
             </div>

@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 const Pagination = () => {
     return (
-        <div className='flex p-2 gap-2 justify-center items-center'>
+        <div className='flex p-2 gap-1 justify-center items-center'>
             <div className='w-7 h-7 p-1 bg-slate-300 rounded-full flex items-center justify-center hover:bg-primary-200 cursor-pointer hover:shadow-2xl'>
                 <Image
                     src={ArrowLeft}
                     alt='arrow-left'
                 />
             </div>
-            <div className='bg-slate-300 rounded-full flex items-center justify-center gap-2 text-center'>
+            <div className='bg-slate-300 rounded-full flex items-center justify-center text-center'>
                 <p className='w-7 h-7 text-primary-200 hover:bg-primary-200 hover:rounded-md hover:rounded-l-full hover:shadow-2xl cursor-pointer hover:text-white'>1</p>
                 <p className='w-7 h-7 hover:bg-primary-200 hover:rounded-md hover:shadow-2xl cursor-pointer hover:text-white'>2</p>
                 <p className='w-7 h-7 hover:bg-primary-200 hover:rounded-md hover:shadow-2xl cursor-pointer hover:text-white'>3</p>
