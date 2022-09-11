@@ -2,8 +2,12 @@ import React from 'react'
 import Profile from 'assets/img/profile/profile.jpg'
 import Image from 'next/image'
 import { Pagination } from 'components'
+import { useRouter } from 'next/router'
 
 const Tutors = () => {
+
+    const router = useRouter()
+
     return (
         <div className='w-full flex flex-col justify-start gap-4'>
             <div className='flex flex-col md:flex-row justify-center gap-8 items-center'>
@@ -26,6 +30,7 @@ const Tutors = () => {
                                 <div className='w-full flex justify-end'>
                                     <button
                                         className='bg-primary-200 text-white rounded-md px-2 py-1 hover:opacity-70 hover:shadow-2xl'
+                                        onClick={() => router.push('/tutor')}
                                     >
                                         Reservasi
                                     </button>

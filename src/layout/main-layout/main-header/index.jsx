@@ -47,8 +47,10 @@ const MainHeader = ({ search }) => {
             {
                 open && (
                     <div className='lg:hidden absolute top-16 right-2 w-28 flex flex-col gap-2 shadow-lg rounded-md p-2 bg-white'>
-                        <p className='hover:bg-primary-200 hover:text-white rounded-md px-2'>Tutor Kami</p>
-                        <p className='hover:bg-primary-200 hover:text-white rounded-md px-2'>FAQ</p>
+                        <p className='hover:bg-primary-200 hover:text-white rounded-md px-2' onClick={() => router.push('/list-tutor')}>Tutor Kami</p>
+                        <p className='hover:bg-primary-200 hover:text-white rounded-md px-2'
+                            onClick={() => router.push('/faq')}
+                        >FAQ</p>
                     </div>
                 )
             }
@@ -105,7 +107,9 @@ const MainHeader = ({ search }) => {
                     </p>
                 </div>
                 <div className='w-28 p-2 bg-primary-200 rounded-2xl cursor-pointer hover:bg-opacity-80'>
-                    <p className='text-center text-white text-sm font-semibold'>
+                    <p className='text-center text-white text-sm font-semibold'
+                        onClick={() => router.push('/faq')}
+                    >
                         FAQ
                     </p>
                 </div>

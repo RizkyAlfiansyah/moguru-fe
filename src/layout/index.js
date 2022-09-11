@@ -6,3 +6,6 @@ export { default as Feature } from "./feature";
 export { default as Statistic } from "./statistic";
 export { default as Contacts } from "./contact-us";
 export { default as Tutors } from "./tutors";
+export { default as SelectedTutors } from "./selected-tutors";
+export { default as Reserved } from "./reserved";
+export { default as FAQuestion } from "./faquestion";
